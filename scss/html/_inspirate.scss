@@ -1,0 +1,74 @@
+/*estilos de Inspirate*/
+body{
+    .body-inspirate{
+        display: grid;
+        height: 100vh;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 1fr 1fr 1fr 1fr 1fr auto;
+        grid-template-areas: "header"
+        "h2"
+        "blog-1"
+        "blog-2"
+        "blog-3"
+        "blog-4"
+        "footer";
+        .mainblog{
+            display: flex;
+            display: block;
+            margin: auto;
+            .blog-1{
+                grid-area: blog-1;
+                @extend %estilosblog;
+
+                .fotoblog{
+                    @extend %estilosfotolog;
+                }
+                .h{
+                    @extend %estiloshblog;
+                }
+                .p{
+                    @extend %estilospblog;
+                }
+            }
+            .blog-2{
+                grid-area: blog-2;
+                @extend %estilosblog;
+                .fotoblog{
+                    @extend %estilosfotolog;
+                }
+                .h{
+                    @extend %estiloshblog;
+                }
+                .p{
+                    @extend %estilospblog;
+                }
+            }
+            .blog-3{
+                grid-area: blog-3;
+                @extend %estilosblog;
+                .fotoblog{
+                    @extend %estilosfotolog;
+                }
+                .h{
+                    @extend %estiloshblog;
+                }
+                .p{
+                    @extend %estilospblog;
+                }
+            }
+            .blog-4{
+                grid-area: blog-4;
+                @extend %estilosblog;
+                .fotoblog{
+                    @extend %estilosfotolog;
+                }
+                .h{
+                    @extend %estiloshblog;
+                }
+                .p{
+                    @extend %estilospblog;
+                }
+            }
+        }
+    }
+}

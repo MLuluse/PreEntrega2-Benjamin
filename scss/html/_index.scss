@@ -1,0 +1,37 @@
+/*estilos index*/
+body{
+    .body-inicio{
+        display: grid;
+        height: 100vh;
+        gap: 1rem;
+        grid-template-columns: 2fr 2fr;
+        grid-template-rows: auto 1fr 1 fr auto;
+        grid-template-areas: 
+        "header header"
+        "bien bien"
+        "img iframe"
+        "img iframe"
+        "footer footer";
+     }
+     div{
+        .bienvenida{
+            grid-area: bien;
+            font-size: 3rem;
+            justify-content: center;
+        }
+     }
+     main{
+        margin: 10%;
+        gap: 1rem;
+        display: flex;
+        flex-wrap: wrap;
+        img{
+            grid-area: img;
+            @include elementoindex
+        }
+        iframe{
+            grid-area: iframe;
+            @include elementoindex
+        }
+     }
+}  
