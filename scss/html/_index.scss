@@ -1,4 +1,4 @@
-/*estilos index*/
+/*estilos index y nosotros*/
 body{
     .body-inicio{
         display: grid;
@@ -9,8 +9,8 @@ body{
         grid-template-areas: 
         "header header"
         "bien bien"
-        "img iframe"
-        "img iframe"
+        "img p"
+        "img p"
         "footer footer";
      }
      div{
@@ -21,17 +21,30 @@ body{
         }
      }
      main{
-        margin: 10%;
+        margin: 7%;
         gap: 1rem;
         display: flex;
         flex-wrap: wrap;
         img{
             grid-area: img;
-            @include elementoindex
+            @include elementoindex;
+            width: 100&;
+            height: 500px;
+            box-shadow: 1px 1px 1px rgb(174, 110, 110);
         }
-        iframe{
-            grid-area: iframe;
-            @include elementoindex
+        .pindex{
+            grid-area: p;
+            @include elementoindex;
+            width: 500px;
+            flex-direction: column;
+            font-size: 1.8rem;
+            color: rgb(58, 50, 50);
+            text-align: center;
+            justify-items: center;
+            span{
+                display: block;
+            }
         }
      }
+     
 }  

@@ -6,15 +6,14 @@ body{
         grid-template-columns: 1fr;
         grid-template-rows: auto 1fr 1fr 1fr 1fr 1fr auto;
         grid-template-areas: "header"
-        "h2"
+        "h1"
         "blog-1"
         "blog-2"
         "blog-3"
         "blog-4"
         "footer";
         .mainblog{
-            display: flex;
-            display: block;
+            justify-content: center;
             margin: auto;
             .blog-1{
                 grid-area: blog-1;
@@ -23,7 +22,7 @@ body{
                 .fotoblog{
                     @extend %estilosfotolog;
                 }
-                .h{
+                .h{ 
                     @extend %estiloshblog;
                 }
                 .p{
@@ -33,8 +32,14 @@ body{
             .blog-2{
                 grid-area: blog-2;
                 @extend %estilosblog;
-                .fotoblog{
-                    @extend %estilosfotolog;
+                .blogiframe{
+                    margin: 4px;
+                    border: 4px solid rgb(226, 53, 180) ;
+                    padding: 4px;
+                    display: block;
+                    margin: 10px;
+                    border-radius: 7px;
+                    float: left;
                 }
                 .h{
                     @extend %estiloshblog;
